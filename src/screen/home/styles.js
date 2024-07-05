@@ -17,15 +17,14 @@ const Styles = StyleSheet.create({
         fontSize: 16
     },
     input: {
+        flex: 1,
         height: 56,
         backgroundColor: '#1F1E25',
         borderRadius: 5,
         color: '#FFF',
-        padding: 16
-    },
-    buttonText: {
-        color: '#FFF',
-        fontSize: 24
+        padding: 16,
+        marginRight: 12,
+
     },
     button: {
         width: 56,
@@ -34,6 +33,14 @@ const Styles = StyleSheet.create({
         backgroundColor: '#31CF67',
         alignItems: 'center',
         justifyContent: 'center',
+        color: '#FFF',
+    },
+    form: {
+        width: '100%',
+        flexDirection: 'row',
+        marginTop: 36,
+        marginBottom: 42,
+        
     },
 })
 
