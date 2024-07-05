@@ -1,9 +1,15 @@
-import {View, Text } from 'react-native';
+import { Text, View } from 'react-native';
 
-export default function HomeScreen() {
+function HomeScreen() {
   return (
     <View>
-      <Text>oi</Text>
+      <Text style={{
+        flex: 1,
+        backgroundColor: 'black'
+      }}>React</Text>
+      <Text>Native</Text>
     </View>
   );
 }
+
+export default HomeScreen
