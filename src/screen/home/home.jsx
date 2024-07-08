@@ -25,14 +25,17 @@ function Home() {
     }
 
     setParticipants((prevState) => [...prevState, saveParticipantName]);
-    setParticipantName('');
+    setParticipantName("");
   };
 
   const handleParticipantRemove = (name) => {
     Alert.alert("Remover", `Remover o participante ${name} ?`, [
       {
         text: "Sim",
-        onPress: () => Alert.alert("Deletado"),
+        onPress: () =>
+          setParticipants((prevState) =>
+            prevState.filter((participant) => participant !== name)
+          ),
       },
       {
         text: "Não",
@@ -52,7 +55,7 @@ function Home() {
           style={styles.input}
           placeholder="Nome do participante"
           placeholderTextColor="#6b6b6b"
-          onChangeText={text => setParticipantName(text)}
+          onChangeText={setParticipantName}
           value={saveParticipantName}
         />
 
