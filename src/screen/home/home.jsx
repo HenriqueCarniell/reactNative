@@ -20,7 +20,7 @@ function Home() {
         />
 
         <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
-          +
+          <Text style={styles.buttonText}>+</Text>
         </TouchableOpacity>
       </View>
 
