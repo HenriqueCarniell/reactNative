@@ -46,6 +46,11 @@ const Styles = StyleSheet.create({
         marginBottom: 42,
         
     },
+    listEmptyText: {
+        color: '#FFF',
+        fontSize: 14,
+        textAlign: 'center'
+    }
 })
 
 export default Styles

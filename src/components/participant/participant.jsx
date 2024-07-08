@@ -1,12 +1,12 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import styles from "./styles";
 
-function Participant() {
+function Participant({ name, onRemove }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.name}>Gustavo henrique</Text>
+      <Text style={styles.name}>{name}</Text>
 
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={onRemove}>
         <Text style={styles.buttonText}>-</Text>
       </TouchableOpacity>
     </View>
