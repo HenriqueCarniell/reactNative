@@ -1,32 +1,12 @@
 {
   "expo": {
-    "name": "reactNative",
-    "slug": "reactNative",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
-    "splash": {
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#ffffff"
+    "extra": {
+      "eas": {
+        "projectId": "72180040-f7dc-4dd6-962b-9f4c012fe667"
       }
     },
-    "web": {
-      "bundler": "metro",
-      "output": "static"
-    },
-    "plugins": [
-      "expo-router"
-    ],
-    "experiments": {
-      "typedRoutes": true
+    "android": {
+      "package": "com.henrique_carniel.PeopleManager"
     }
   }
 }
